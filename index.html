@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan de Sitio Web Mensual</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            margin-top: -70px; /* Mueve el contenido hacia arriba */
+        }
+        .title {
+            font-size: 2.5em; /* Aumenta el tamaño de la fuente */
+            margin-bottom: 5px;
+        }
+        .subtitle {
+            font-size: 3em; /* Aumenta el tamaño de la fuente */
+            font-weight: bold; /* Negrita */
+            margin-bottom: 30px;
+        }
+        .plans {
+            display: flex;
+            justify-content: center;
+        }
+        .plan {
+            background-color: #444;
+            border-radius: 8px;
+            margin: 0 10px;
+            padding: 20px;
+            width: 200px;
+            position: relative;
+            transition: transform 0.3s ease; /* Añade transición */
+        }
+        .plan:hover {
+            transform: scale(1.05); /* Aumenta el tamaño al pasar el cursor */
+        }
+        .plan-header {
+            background-color: #fff;
+            color: #333;
+            border-radius: 8px 8px 0 0;
+            padding: 10px;
+            font-size: 1.5em;
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            text-align: center;
+        }
+        .plan-header.small {
+            width: 60%; /* Reduce el tamaño del tercer recuadro blanco */
+        }
+        .plan-body {
+            padding-top: 50px; /* Aumenta el espacio superior en el tercer recuadro */
+        }
+        .plan-price {
+            font-size: 2em;
+            margin: 10px 0;
+        }
+        .plan-details {
+            margin: 10px 0;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+        .plan-button {
+            background-color: #fff;
+            color: #333;
+            border: none;
+            border-radius: 8px;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 1em;
+            margin-top: 20px;
+        }
+        .plan:nth-child(1) { background-color: #88c; }
+        .plan:nth-child(2) { background-color: #0af; }
+        .plan:nth-child(3) { background-color: #f88; }
+        .plan:nth-child(3) .plan-body {
+            padding-top: 70px; /* Ajusta el espacio superior del tercer recuadro */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Elige tu sueldo</div>
+        <div class="subtitle">plan de sitio web mensual</div>
+        <div class="plans">
+            <div class="plan">
+                <div class="plan-header" style="border-radius: 8px 8px 8px 8px;">Inicio de cinco páginas</div>
+                <div class="plan-body">
+                    <div class="plan-price">$29</div>
+                    <div class="plan-details">
+                        1 usuario completo<br>
+                        1000 vistas previas de correo electrónico<br>
+                        5 contactos por cliente<br>
+                        5 tazas de café
+                    </div>
+                    <button class="plan-button">COMPRAR AHORA</button>
+                </div>
+            </div>
+            <div class="plan">
+                <div class="plan-header" style="border-radius: 8px 8px 8px 8px;">Negocio de 10 páginas</div>
+                <div class="plan-body">
+                    <div class="plan-price">$59</div>
+                    <div class="plan-details">
+                        10 usuarios completos<br>
+                        2000 vistas previas de correo electrónico<br>
+                        5 contactos por cliente<br>
+                        10 tazas de café
+                    </div>
+                    <button class="plan-button">COMPRAR AHORA</button>
+                </div>
+            </div>
+            <div class="plan">
+                <div class="plan-header small" style="border-radius: 8px 8px 8px 8px;">Inicio de comercio electrónico</div>
+                <div class="plan-body">
+                    <div class="plan-price">$119</div>
+                    <div class="plan-details">
+                        1 usuario completo<br>
+                        3000 vistas previas de correo electrónico<br>
+                        5 contactos por cliente<br>
+                        15 tazas de café
+                    </div>
+                    <button class="plan-button">COMPRAR AHORA</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
